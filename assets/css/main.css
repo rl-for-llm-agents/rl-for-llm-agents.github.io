@@ -139,9 +139,8 @@ ul li {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(233,69,96,0.15) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 20%, rgba(245,166,35,0.10) 0%, transparent 60%),
-    linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    linear-gradient(135deg, rgba(15,15,35,0.82) 0%, rgba(26,26,46,0.75) 50%, rgba(22,33,62,0.82) 100%),
+    url('../img/hero-bg.jpg') center center / cover no-repeat;
   z-index: 0;
 }
 
