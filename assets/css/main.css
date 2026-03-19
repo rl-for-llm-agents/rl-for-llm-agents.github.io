@@ -125,7 +125,7 @@ ul li {
    Hero Section
    ============================ */
 .hero {
-  min-height: 100vh;
+  min-height: 60vh;
   background: var(--dark-bg);
   display: flex;
   flex-direction: column;
@@ -133,6 +133,7 @@ ul li {
   position: relative;
   overflow: hidden;
   padding-top: 70px;
+  padding-bottom: 60px;
 }
 
 .hero-bg {
