@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>RL4LLM-Agents @ ICAIF 2026</title>
+  <meta name="description" content="Workshop on Reinforcement Learning for LLM-based Agents at ICAIF 2026">
+  <meta name="keywords" content="reinforcement learning, LLM, agents, workshop, ICAIF 2026">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&family=Raleway:wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">RL4LLM-Agents</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#cfp">Call for Papers</a></li>
+          <li><a href="#dates">Important Dates</a></li>
+          <li><a href="#submission">Submission</a></li>
+          <li><a href="#organizers">Organizers</a></li>
+          <li><a href="#pc">Program Committee</a></li>
+          <li><a href="#schedule">Program</a></li>
+          <li><a href="#venue">Venue</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero section dark-background">
+      <div class="hero-bg"></div>
+      <div class="container d-flex flex-column align-items-center text-center mt-auto">
+        <h2 data-aos="fade-up" data-aos-delay="100">
+          Workshop on Reinforcement Learning for LLM-based Agents (RL4LLM-Agents)
+        </h2>
+        <p data-aos="fade-up" data-aos-delay="200">Co-located with ICAIF 2026</p>
+      </div>
+
+      <div class="about-info mt-auto position-relative">
+        <div class="container position-relative" data-aos="fade-up">
+          <div class="row">
+            <div class="col-lg-8">
+              <h2>About The Workshop</h2>
+              <p>
+                Large Language Models (LLMs) are increasingly being deployed as autonomous agents capable of reasoning, planning, and taking actions in complex environments. Reinforcement Learning (RL) offers a powerful framework to train and fine-tune such agents — enabling them to optimize long-horizon objectives, explore effectively, and adapt to dynamic, feedback-rich environments.
+              </p>
+              <p>
+                This workshop brings together researchers and practitioners at the intersection of RL and LLM-based agents, with a particular focus on applications in finance and economics — a domain rich with sequential decision-making problems, non-stationary dynamics, and high-stakes outcomes.
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <div class="row">
+                <div class="col-lg-12 col-6 mb-3">
+                  <h3>Where</h3>
+                  <p>Co-located with the <a href="https://icaif2026.org/" target="_blank">ACM International Conference on AI in Finance (ICAIF 2026)</a></p>
+                </div>
+                <div class="col-lg-12 col-6">
+                  <h3>When</h3>
+                  <p>TBD, 2026</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- ======= Call for Papers ======= -->
+    <section id="cfp" class="section light-background">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Call for Papers</h2>
+        </div>
+        <p>
+          We invite submissions on the use of Reinforcement Learning techniques for training, fine-tuning, and deploying LLM-based agents. We especially welcome works that address applications in finance, trading, risk management, and related domains. Topics of interest include, but are not limited to:
+        </p>
+        <ul>
+          <li><b>RL-based fine-tuning of LLMs</b> — RLHF, RLAIF, GRPO, PPO, and other RL-from-feedback methods for shaping agent behavior.</li>
+          <li><b>LLM agents for sequential decision-making</b> — planning, reasoning, and acting in multi-step environments.</li>
+          <li><b>Reward modeling and shaping</b> for LLM agents, including sparse reward settings and reward hacking mitigation.</li>
+          <li><b>Multi-agent LLM systems</b> — cooperation, competition, and emergent behavior among multiple LLM-based agents.</li>
+          <li><b>Exploration and sample efficiency</b> in training LLM agents with RL.</li>
+          <li><b>LLM agents in financial applications</b> — algorithmic trading, portfolio management, market simulation, risk assessment.</li>
+          <li><b>Agentic RAG and tool use</b> — LLM agents that retrieve information, use APIs, and interact with external environments.</li>
+          <li><b>Evaluation benchmarks and datasets</b> for RL-trained LLM agents.</li>
+          <li><b>Safety, alignment, and robustness</b> of RL-trained LLM agents in high-stakes domains.</li>
+          <li><b>Theoretical foundations</b> — convergence, generalization, and optimization in RL for language models.</li>
+        </ul>
+      </div>
+    </section><!-- /Call for Papers -->
+
+    <!-- ======= Important Dates ======= -->
+    <section id="dates" class="section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Important Dates</h2>
+        </div>
+        <ul class="dates-list">
+          <li><span class="date-label">TBD:</span> Paper submission deadline</li>
+          <li><span class="date-label">TBD:</span> Notification of acceptance</li>
+          <li><span class="date-label">TBD:</span> Camera-ready deadline</li>
+          <li><span class="date-label">TBD:</span> Workshop date</li>
+        </ul>
+        <p class="mt-3"><em>All deadlines are 11:59 PM Anywhere on Earth (AoE).</em></p>
+      </div>
+    </section><!-- /Important Dates -->
+
+    <!-- ======= Submission ======= -->
+    <section id="submission" class="section light-background">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Submission</h2>
+        </div>
+        <p>
+          We welcome the following types of submissions:
+        </p>
+        <ul>
+          <li><b>Full papers</b> (up to 8 pages, excluding references) — presenting mature research with rigorous evaluation.</li>
+          <li><b>Short papers / extended abstracts</b> (up to 4 pages, excluding references) — presenting early-stage work, position papers, or proofs-of-concept.</li>
+        </ul>
+        <p>
+          Submissions should be formatted using the <a href="https://www.acm.org/publications/proceedings-template" target="_blank">ACM proceedings template</a> and submitted as PDF. All submissions will be peer-reviewed. Accepted papers will be presented at the workshop (oral or poster, based on reviewer recommendations).
+        </p>
+        <p>
+          <b>Submission portal:</b> To be announced.
+        </p>
+        <p>
+          Submissions must describe original, unpublished work and must not be under review elsewhere. We follow a single-blind review process.
+        </p>
+      </div>
+    </section><!-- /Submission -->
+
+    <!-- ======= Organizers ======= -->
+    <section id="organizers" class="speakers section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Organizers</h2>
+      </div>
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+
+          <!-- Organizer placeholder — replace with real info -->
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/placeholder.jpg" class="img-fluid" alt="Organizer">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Name TBD</h4>
+                  <span>Affiliation TBD</span>
+                </div>
+                <div class="social">
+                  <a href="#"><i class="bi bi-envelope"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+      </div>
+    </section><!-- /Organizers -->
+
+    <!-- ======= Program Committee ======= -->
+    <section id="pc" class="section light-background">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Program Committee</h2>
+        </div>
+        <p><em>To be announced.</em></p>
+      </div>
+    </section><!-- /PC -->
+
+    <!-- ======= Schedule ======= -->
+    <section id="schedule" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Program</h2>
+        <p><em>To be announced.</em></p>
+      </div>
+    </section><!-- /Schedule -->
+
+    <!-- ======= Venue ======= -->
+    <section id="venue" class="section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Venue</h2>
+        <p>
+          The workshop will be held in conjunction with <a href="https://icaif2026.org/" target="_blank">ICAIF 2026</a>. Please refer to the main conference website for venue and travel information.
+        </p>
+      </div>
+    </section><!-- /Venue -->
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer dark-background">
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>© 2026 RL4LLM-Agents Workshop. All Rights Reserved.</div>
+          <div class="credits">
+            Template inspired by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- Vendor JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
