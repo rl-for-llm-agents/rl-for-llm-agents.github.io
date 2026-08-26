@@ -382,6 +382,12 @@ section.hero p.hero-venue {
   color: var(--accent-color);
 }
 
+.pc-note {
+  text-align: center;
+  color: #6b7f93;
+  font-size: 0.92rem;
+}
+
 .member-info-content span {
   font-size: 0.82rem;
   color: #666;
