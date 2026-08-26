@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>RL4LLM-Agents @ ICAIF 2026</title>
-  <meta name="description" content="Workshop on Reinforcement Learning for LLM-based Agents at ICAIF 2026">
-  <meta name="keywords" content="reinforcement learning, LLM, agents, workshop, ICAIF 2026">
+  <meta name="description" content="Workshop on Reinforcement Learning for LLM-based Agents at ICAIF 2026: learning in weight space (RLHF, GRPO, RLVR) and learning in context (in-context RL, reflection, memory and skill libraries, harness optimization).">
+  <meta name="keywords" content="reinforcement learning, in-context reinforcement learning, LLM, agents, self-evolving agents, harness optimization, RLHF, GRPO, RLVR, Reflexion, skill library, workshop, ICAIF 2026">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -56,7 +56,8 @@
         <h2 data-aos="fade-up" data-aos-delay="100">
           Workshop on Reinforcement Learning for LLM-based Agents (RL4LLM-Agents)
         </h2>
-        <p data-aos="fade-up" data-aos-delay="200">Co-located with ICAIF 2026</p>
+        <p class="hero-tagline" data-aos="fade-up" data-aos-delay="200">Learning in weight space and learning in context</p>
+        <p class="hero-venue" data-aos="fade-up" data-aos-delay="300">Co-located with ICAIF 2026</p>
       </div>
     </section><!-- /Hero Section -->
 
@@ -67,10 +68,16 @@
           <div class="col-lg-8">
             <h2>About The Workshop</h2>
             <p>
-              Large Language Models (LLMs) are increasingly being deployed as autonomous agents capable of reasoning, planning, and taking actions in complex environments. Reinforcement Learning (RL) offers a powerful framework to train and fine-tune such agents, enabling them to optimize long-horizon objectives, explore effectively, and adapt to dynamic, feedback-rich environments.
+              Large Language Models (LLMs) are increasingly deployed as autonomous agents that reason, plan, use tools, and act in complex environments. Reinforcement Learning (RL) offers a powerful framework for making such agents improve from feedback, optimize long-horizon objectives, explore effectively, and adapt to non-stationary settings.
             </p>
             <p>
-              This workshop brings together researchers and practitioners at the intersection of RL and LLM-based agents, with a particular focus on applications in finance and economics, a domain rich with sequential decision-making problems, non-stationary dynamics, and high-stakes outcomes.
+              An LLM agent, however, is not only a model. It is a model wrapped in a <b>harness</b>: the context it is given, the memory and skills it accumulates, the tools it can call, the control loop that retries and repairs, and the evaluation signal that tells it whether it succeeded. That means there are <b>two distinct places where learning can happen</b>, and this workshop treats both as first-class.
+            </p>
+            <p>
+              <b>Model-side RL</b> updates the weights: RLHF, RLAIF, PPO, GRPO, DPO, and RL with verifiable rewards. <b>Harness-side RL</b>, increasingly known as <b>in-context reinforcement learning</b>, leaves the weights frozen and optimizes everything around them in text space. There, a reflection plays the role of the gradient, a persisted skill or memory document plays the role of the parameter vector, a held-out evaluation set plays the role of the loss, and a validation gate plays the role of regularization. It runs at inference time, needs no GPU, and works on closed models that cannot be fine-tuned.
+            </p>
+            <p>
+              We bring together researchers and practitioners across both axes, with particular attention to finance and economics: a domain rich in sequential decision-making, non-stationary dynamics, strict auditability requirements, and high-stakes outcomes.
             </p>
           </div>
           <div class="col-lg-4">
@@ -96,19 +103,41 @@
           <h2>Call for Papers</h2>
         </div>
         <p>
-          We invite submissions on the use of Reinforcement Learning techniques for training, fine-tuning, and deploying LLM-based agents. We especially welcome works that address applications in finance, trading, risk management, and related domains. Topics of interest include, but are not limited to:
+          We invite submissions on Reinforcement Learning for LLM-based agents along either axis, or across both. We especially welcome work grounded in finance, trading, risk management, and related domains. Topics of interest include, but are not limited to:
         </p>
+
+        <h3 class="track-heading">Track A: Model-side RL (weight space)</h3>
         <ul>
-          <li><b>RL-based fine-tuning of LLMs</b>:RLHF, RLAIF, GRPO, PPO, and other RL-from-feedback methods for shaping agent behavior.</li>
-          <li><b>LLM agents for sequential decision-making</b>:planning, reasoning, and acting in multi-step environments.</li>
-          <li><b>Reward modeling and shaping</b> for LLM agents, including sparse reward settings and reward hacking mitigation.</li>
-          <li><b>Multi-agent LLM systems</b>:cooperation, competition, and emergent behavior among multiple LLM-based agents.</li>
-          <li><b>Exploration and sample efficiency</b> in training LLM agents with RL.</li>
-          <li><b>LLM agents in financial applications</b>:algorithmic trading, portfolio management, market simulation, risk assessment.</li>
-          <li><b>Agentic RAG and tool use</b>:LLM agents that retrieve information, use APIs, and interact with external environments.</li>
-          <li><b>Evaluation benchmarks and datasets</b> for RL-trained LLM agents.</li>
-          <li><b>Safety, alignment, and robustness</b> of RL-trained LLM agents in high-stakes domains.</li>
-          <li><b>Theoretical foundations</b>:convergence, generalization, and optimization in RL for language models.</li>
+          <li><b>RL-based fine-tuning of LLMs</b>: RLHF, RLAIF, PPO, GRPO, DPO, and other RL-from-feedback methods for shaping agent behavior.</li>
+          <li><b>RL with verifiable rewards</b> and process reward models for multi-step reasoning and tool use.</li>
+          <li><b>Reward modeling and shaping</b>, including sparse-reward settings and reward-hacking mitigation.</li>
+          <li><b>Exploration, credit assignment, and sample efficiency</b> when training agents over long horizons.</li>
+          <li><b>Theoretical foundations</b>: convergence, generalization, and optimization in RL for language models.</li>
+        </ul>
+
+        <h3 class="track-heading">Track B: Harness-side RL, or in-context RL (context space)</h3>
+        <ul>
+          <li><b>In-context reinforcement learning</b> and test-time learning that improves an agent without any weight update.</li>
+          <li><b>Reflection as a learning signal</b>: self-critique, verbal feedback, and trajectory-level error analysis in the role of the gradient.</li>
+          <li><b>Memory and skill libraries</b>: generation, extraction, retrieval, consolidation, versioning, and forgetting.</li>
+          <li><b>Automatic prompt, instruction, and program optimization</b>, including compiled-pipeline and search-based approaches.</li>
+          <li><b>Self-generated curricula and open-ended skill discovery</b> in interactive environments.</li>
+          <li><b>Tool and skill synthesis</b>: agents that build, name, and hierarchically organize their own capabilities.</li>
+          <li><b>Validation gates and lifecycle control</b>: preventing context pollution, quantifying degradation from unvetted memory, and deciding what is allowed to persist.</li>
+          <li><b>Evolutionary and population methods</b> over harness configurations, prompts, and skill sets.</li>
+          <li><b>Transfer of harness artifacts</b>: strong-to-weak skill teaching, and distilling learned context into smaller or cheaper models.</li>
+        </ul>
+
+        <h3 class="track-heading">Cross-cutting topics</h3>
+        <ul>
+          <li><b>Weights or context</b>: when to move which, and the cost, latency, data, and governance trade-offs involved.</li>
+          <li><b>Hybrid pipelines</b>: harness search that generates training data for weight-space RL, and fine-tuned models that shrink the harness they need.</li>
+          <li><b>LLM agents for sequential decision-making</b>: planning, reasoning, and acting in multi-step environments.</li>
+          <li><b>Multi-agent LLM systems</b>: cooperation, competition, and emergent behavior among multiple LLM-based agents.</li>
+          <li><b>Agentic RAG and tool use</b>: agents that retrieve information, call APIs, and interact with external environments.</li>
+          <li><b>Evaluation benchmarks, datasets, reproducibility, and observability</b> for agents that learn along either axis.</li>
+          <li><b>Safety, alignment, auditability, and robustness</b> of learning agents in high-stakes domains.</li>
+          <li><b>LLM agents in financial applications</b>: algorithmic trading, portfolio management, market simulation, risk assessment, and research automation.</li>
         </ul>
       </div>
     </section><!-- /Call for Papers -->
@@ -120,12 +149,14 @@
           <h2>Important Dates</h2>
         </div>
         <ul class="dates-list">
-          <li><span class="date-label">TBD:</span> Paper submission deadline</li>
-          <li><span class="date-label">TBD:</span> Notification of acceptance</li>
+          <li><span class="date-label">August 28, 2026:</span> Call for Papers released <span class="date-note">tentative</span></li>
+          <li><span class="date-label">September 18, 2026:</span> Paper submission deadline <span class="date-note">tentative</span></li>
+          <li><span class="date-label">October 14, 2026:</span> Notification of acceptance <span class="date-note date-fixed">fixed</span></li>
           <li><span class="date-label">TBD:</span> Camera-ready deadline</li>
+          <li><span class="date-label">Late October 2026:</span> Final program published on this site</li>
           <li><span class="date-label">TBD:</span> Workshop date</li>
         </ul>
-        <p class="mt-3"><em>All deadlines are 11:59 PM Anywhere on Earth (AoE).</em></p>
+        <p class="mt-3"><em>All deadlines are 11:59 PM Anywhere on Earth (AoE). Dates marked tentative may shift; the notification date is fixed by the ICAIF 2026 schedule.</em></p>
       </div>
     </section><!-- /Important Dates -->
 
@@ -139,8 +170,9 @@
           We welcome the following types of submissions:
         </p>
         <ul>
-          <li><b>Full papers</b> (up to 8 pages, excluding references):presenting mature research with rigorous evaluation.</li>
-          <li><b>Short papers / extended abstracts</b> (up to 4 pages, excluding references):presenting early-stage work, position papers, or proofs-of-concept.</li>
+          <li><b>Full papers</b> (up to 8 pages, excluding references): presenting mature research with rigorous evaluation.</li>
+          <li><b>Short papers and extended abstracts</b> (up to 4 pages, excluding references): presenting early-stage work, position papers, or proofs-of-concept.</li>
+          <li><b>System and reproducibility reports</b> (up to 4 pages, excluding references): open implementations, benchmarks, or negative results along either axis.</li>
         </ul>
         <p>
           Submissions should be formatted using the <a href="https://www.acm.org/publications/proceedings-template" target="_blank">ACM proceedings template</a> and submitted as PDF. All submissions will be peer-reviewed. Accepted papers will be presented at the workshop (oral or poster, based on reviewer recommendations).
