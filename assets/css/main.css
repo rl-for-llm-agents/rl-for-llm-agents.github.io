@@ -399,6 +399,17 @@ section.hero p.hero-venue {
   color: #fff;
 }
 
+.date-note.date-extended {
+  background: #e8f6ec;
+  color: #1e7b3c;
+}
+
+.date-label del {
+  font-weight: 400;
+  opacity: 0.6;
+  margin-right: 4px;
+}
+
 /* ============================
    Organizers / Speakers
    ============================ */
