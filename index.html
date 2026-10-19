@@ -39,6 +39,7 @@
           <li><a href="#submission">Submission</a></li>
           <li><a href="#organizers">Organizers</a></li>
           <li><a href="#pc">Program Committee</a></li>
+          <li><a href="#keynotes">Keynotes</a></li>
           <li><a href="#schedule">Program</a></li>
           <li><a href="#venue">Venue</a></li>
         </ul>
@@ -329,6 +330,53 @@
         <p class="pc-note mt-4"><em>Additional program committee members to be announced.</em></p>
       </div>
     </section><!-- /PC -->
+
+    <!-- ======= Keynote Speakers ======= -->
+    <section id="keynotes" class="section keynotes">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Keynote Speakers</h2>
+        <p class="keynote-note"><em>Keynote time slots will be announced soon.</em></p>
+      </div>
+      <div class="container">
+
+        <!-- Alessio Brini -->
+        <div class="keynote" data-aos="fade-up">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-4 col-lg-3">
+              <img src="assets/img/alessio.jpg" class="img-fluid keynote-photo" alt="Alessio Brini">
+              <h3 class="keynote-name">Alessio Brini</h3>
+              <span class="keynote-affil">Executive in Residence<br>Pratt School of Engineering, Duke University</span>
+            </div>
+            <div class="col-md-8 col-lg-9">
+              <h4 class="keynote-title">Reinforcement Learning for LLM Agents in Finance: Lessons from Sequential Decision-Making</h4>
+              <h5>Abstract</h5>
+              <p>Reinforcement learning has improved the reasoning of large language models on problems whose answers can be verified, and language model agents can now also learn in context through reflection, memory, and prompt optimization. However, both approaches require feedback that separates good decisions from bad ones, and financial markets weaken such feedback in four ways: rewards are noisy and delayed, the environment changes while the agent learns, every action is costly, and a model may have seen the test period during pretraining. In this talk, we examine each of these problems and bring to language model agents a lesson from reinforcement learning for financial decision-making. These lessons concern how to design rewards, when an agent should trade or adapt, and how to train and evaluate agents in environments where the optimal behavior is known. Finally, we discuss what these lessons imply for the choice between updating a model's weights and updating the context in which the agent learns.</p>
+              <h5>Bio</h5>
+              <p>Alessio Brini is an Executive in Residence at Duke University's Pratt School of Engineering. His research applies machine learning to finance and economics, with a focus on reinforcement learning, volatility forecasting, and decentralized finance. His work on sequential decision-making covers trading, derivative hedging, and policy recommendation for interbank network stability. He holds a Ph.D. in Mathematical Finance from Scuola Normale Superiore.</p>
+            </div>
+          </div>
+        </div><!-- End Keynote -->
+
+        <!-- Federico Bianchi -->
+        <div class="keynote" data-aos="fade-up">
+          <div class="row g-4 align-items-start">
+            <div class="col-md-4 col-lg-3">
+              <img src="assets/img/federico.jpg" class="img-fluid keynote-photo" alt="Federico Bianchi">
+              <h3 class="keynote-name">Federico Bianchi</h3>
+              <span class="keynote-affil">Staff ML Scientist<br>Together AI</span>
+            </div>
+            <div class="col-md-8 col-lg-9">
+              <h4 class="keynote-title">Learning to Discover at Test Time</h4>
+              <h5>Abstract</h5>
+              <p>How can we use AI to discover a new state of the art for a scientific problem? Prior work in test-time scaling, such as AlphaEvolve, performs search by prompting a frozen LLM. We perform reinforcement learning at test time, so the LLM can continue to train, but now with experience specific to the test problem. This form of continual learning is quite special, because its goal is to produce one great solution rather than many good ones on average, and to solve this very problem rather than generalize to other problems. Therefore, our learning objective and search subroutine are designed to prioritize the most promising solutions. We call this method Test-Time Training to Discover (TTT-Discover). Following prior work, we focus on problems with continuous rewards. We report results for every problem we attempted, across mathematics, GPU kernel engineering, algorithm design, and biology. TTT-Discover sets the new state of the art in almost all of them: (i) Erd&#337;s&rsquo; minimum overlap problem and an autocorrelation inequality; (ii) a GPUMode kernel competition (up to 2&times; faster than prior art); (iii) past AtCoder algorithm competitions; and (iv) denoising problem in single-cell analysis. Our solutions are reviewed by experts or the organizers. All our results are achieved with an open model, OpenAI gpt-oss-120b, and can be reproduced with our publicly available code, in contrast to previous best results that required closed frontier models.</p>
+              <h5>Bio</h5>
+              <p>Federico Bianchi is a Staff ML Scientist at TogetherAI, working on self-improving agents. He was previously an AI Engineer at OpenEvidence and a post-doc at Stanford University. His work has been published in major journals such as Nature and Nature Medicine and conferences such as ICLR, ICML and ACL, and has been featured in Science, The Washington Post, and other outlets.</p>
+            </div>
+          </div>
+        </div><!-- End Keynote -->
+
+      </div>
+    </section><!-- /Keynotes -->
 
     <!-- ======= Schedule ======= -->
     <section id="schedule" class="section">

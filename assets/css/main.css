@@ -579,3 +579,68 @@ section.hero p.hero-venue {
     font-size: 1.3rem;
   }
 }
+
+/* ============================
+   Keynote Speakers
+   ============================ */
+.keynotes {
+  border-top: 1px solid #e4ecf4;
+}
+
+.keynote-note {
+  color: #6b7f93;
+  font-size: 0.92rem;
+}
+
+.keynote {
+  background: #fff;
+  border: 1px solid #e4ecf4;
+  border-radius: 8px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.07);
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.keynote-photo {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.keynote-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 4px;
+}
+
+.keynote-affil {
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.keynote-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.keynote h5 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin: 18px 0 6px;
+}
+
+.keynote p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
